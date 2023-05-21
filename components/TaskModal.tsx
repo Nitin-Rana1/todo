@@ -39,7 +39,7 @@ export default function TaskModal({
     <main className={styles.taskModal}>
       <section></section>
       <Button variant="outlined" onClick={handleClickOpen}>
-        Add a Task
+        Add a todo
       </Button>
       <Dialog
         open={open}
