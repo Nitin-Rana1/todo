@@ -59,7 +59,7 @@ export default function ToDoApp() {
       <section className={styles.searchBar}>
         <TextField
           className={styles.searchField}
-          label="Search Term"
+          label="Search ToDo"
           variant="outlined"
           onChange={(e) => setSearchTerm(e.target.value)}
           value={searchTerm}

@@ -1,15 +1,31 @@
-.toDoApp {
-  width: 80vw;
-  .searchBar {
-    display: flex;
-    justify-content: center;
-    padding: 7vh 2vw 1vh 2vw;
-    .searchField {
-      width: 70vw;
-    }
-  }
+.container {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
 }
-.showToDo {
+
+.main {
+  display: grid;
+  justify-content: center;
+  height: 85vh;
+  overflow-y: scroll;
+  width: 100vw;
+}
+
+.footer {
+  width: 100vw;
+  height: 10vh;
+  position: absolute;
+  display: flex;
+  justify-content: space-around;
+  bottom: 0;
+  left: 0;
+  background-color: #b1d6ea;
+  padding: 1vh 2vw 1vh 2vw;
+  .socials {
+    display: flex;
+    justify-content: space-around;
+  }
 }
 
 /* Extra small devices (phones, 600px and down) */
@@ -22,16 +38,10 @@
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-  .toDoApp {
-    width: 65vw;
-  }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-  .toDoApp {
-    width: 50vw;
-  }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */

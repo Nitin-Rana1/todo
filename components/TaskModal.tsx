@@ -38,7 +38,11 @@ export default function TaskModal({
   return (
     <main className={styles.taskModal}>
       <section></section>
-      <Button variant="outlined" onClick={handleClickOpen}>
+      <Button
+        sx={{ marginBottom: "2vh" }}
+        variant="outlined"
+        onClick={handleClickOpen}
+      >
         Add a todo
       </Button>
       <Dialog
@@ -50,18 +54,14 @@ export default function TaskModal({
       >
         <DialogTitle>ADD A TASK</DialogTitle>
         <DialogContent>
-          <DialogContentText
-            sx={{ marginTop: "1vh", padding: "0 1vw 0 1vw" }}
-            id="alert-dialog-slide-description"
-          >
-            <TextField
-              id="outlined-basic"
-              label="Task"
-              variant="outlined"
-              onChange={(e) => setTask(e.target.value)}
-              value={task}
-            />
-          </DialogContentText>
+          <TextField
+            sx={{ marginTop: "1vh" }}
+            id="outlined-basic"
+            label="Task"
+            variant="outlined"
+            onChange={(e) => setTask(e.target.value)}
+            value={task}
+          />
         </DialogContent>
         <DialogActions>
           <Button onClick={handleClose}>Cancel</Button>

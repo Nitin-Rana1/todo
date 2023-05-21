@@ -1,8 +1,11 @@
 import Head from "next/head";
 import Image from "next/image";
-import styles from "../styles/Home.module.css";
+import styles from "../styles/Home.module.scss";
 import Link from "next/link";
 import ToDoApp from "../components/ToDoApp";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import GitHubIcon from "@mui/icons-material/GitHub";
+import MailIcon from "@mui/icons-material/Mail";
 
 export default function Home() {
   return (
@@ -17,10 +20,28 @@ export default function Home() {
         <ToDoApp />
       </main>
 
-      {/* <footer className={styles.footer}>
-        Created by: Nitin Rana
-        <Link href="https://www.linkedin.com/in/nitin-rana2004/"></Link>
-      </footer> */}
+      <footer className={styles.footer}>
+        <div>
+          <b>Created by:</b>
+          <br /> Nitin Rana
+        </div>
+        <div>
+          <div>
+            <b>Contact Me:</b>
+          </div>
+          <section className={styles.socials}>
+            <Link href="https://www.linkedin.com/in/nitin-rana2004/">
+              <LinkedInIcon sx={{ marginRight: "3vw" }} />
+            </Link>
+            <Link href="https://github.com/Nitin-Rana1/">
+              <GitHubIcon sx={{ marginRight: "3vw" }} />
+            </Link>
+            <a href="mailto:nitinranagraphian@gmail.com">
+              <MailIcon sx={{ marginRight: "3vw" }} />
+            </a>
+          </section>
+        </div>
+      </footer>
     </div>
   );
 }
