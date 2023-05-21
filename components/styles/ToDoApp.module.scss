@@ -1,0 +1,13 @@
+.toDoApp {
+  width: 50vw;
+  .searchBar {
+    display: flex;
+    justify-content: center;
+    padding: 7vh 2vw 1vh 2vw;
+    .searchField {
+      width: 30vw;
+    }
+  }
+}
+.showToDo {
+}
