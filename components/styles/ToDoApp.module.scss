@@ -1,5 +1,6 @@
 .toDoApp {
-  width: 80vw;
+  min-width: 90vw;
+  height: 90vh;
   .searchBar {
     display: flex;
     justify-content: center;
@@ -8,8 +9,23 @@
       width: 70vw;
     }
   }
+  .addBar {
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    padding: 1vh 2vw 1vh 2vw;
+    .addField {
+      width: 50vw;
+      padding-right: 10vw;
+    }
+  }
 }
 .showToDo {
+}
+.taskHolder {
+  display: flex;
+  justify-content: space-around;
+  height: 60vh;
 }
 
 /* Extra small devices (phones, 600px and down) */
