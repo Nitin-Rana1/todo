@@ -127,7 +127,14 @@ export default function ToDoApp() {
           variant="outlined"
           onChange={(e) => setTask(e.target.value)}
           value={task}
-          sx={{ input: { color: "white" } }}
+          sx={{
+            input: {
+              color: "white",
+            },
+          }}
+          InputLabelProps={{
+            style: { color: "#1976d2" },
+          }}
           autoFocus
         />
         <Button variant="contained" onClick={() => addTask()}>
