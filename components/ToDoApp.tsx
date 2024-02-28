@@ -171,7 +171,7 @@ export default function ToDoApp() {
       >
         {scoreList.map((score, i) => {
           return (
-            <div>
+            <div key={score.toString() + i.toString()}>
               <h4>Day {i + 1}:</h4>
               <LinearProgress
                 variant="determinate"
